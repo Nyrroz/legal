@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rayane Aberkane - Legal Terms</title>
+    <script>
+        function navigateToPage(selectElement) {
+            const selectedPage = selectElement.value;
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Rayane Aberkane (Nyrroz)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <label for="privacy-dropdown">Privacy Policy:</label>
+                    <select id="privacy-dropdown" onchange="navigateToPage(this)">
+                        <option value="">Select a page</option>
+                        <option value="privacy_policies/blitzcheck-privacy-policy.html">BlitzCheck</option>
+                        <!-- <option value="privacy_policies/privacy-policy.html">General Privacy Policy</option> -->
+
+                        <!-- Add more pages as needed -->
+                    </select>
+                </li>
+                <li>
+                    <label for="legal-dropdown">Legal Terms:</label>
+                    <select id="legal-dropdown" onchange="navigateToPage(this)">
+                        <option value="">Select a page</option>
+                        <!-- <option value="legal_terms/legal-terms.html">General Legal Terms</option> -->
+
+                        <!-- Add more pages as needed -->
+                    </select>
+                </li>
+                <li>
+                    <label for="conditions-dropdown">General Conditions:</label>
+                    <select id="conditions-dropdown" onchange="navigateToPage(this)">
+                        <option value="">Select a page</option>
+                        <!-- <option value="general_conditions/general-conditions.html">General Conditions</option> -->
+                        <!-- Add more pages as needed -->
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to My Legal Terms Page</h2>
+        <p>Here you can find important legal information regarding the use of my services.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rayane Aberkane. All rights reserved.</p>
+    </footer>
+</body>
+</html>
